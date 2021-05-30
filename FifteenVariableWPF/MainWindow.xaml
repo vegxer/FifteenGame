@@ -1,0 +1,39 @@
+﻿<Window x:Class="FifteenVariableWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FifteenVariableWPF"
+        mc:Ignorable="d"
+        Title="Пятнашки" Height="500" Width="460" WindowStartupLocation="CenterScreen" Loaded="StartGame">
+    <DockPanel Name="dockPanel" LastChildFill = "True">
+        <Menu Name ="Menu" DockPanel.Dock = "Top">
+            <MenuItem Name = "MenuStartGame" Header = "Новая игра" FontSize = "16" Click = "startMenu_Click"/>
+            <MenuItem Name = "MenuChooseSize" Header = "Размер" FontSize = "16">
+                <MenuItem Name = "MenuWidth" Header = "Ширина" FontSize = "15">
+                    <MenuItem Name = "MenuWidth2" Header = "2" FontSize="14" Click="MenuItemWidth_Click"/>
+                    <MenuItem Name = "MenuWidth3" Header = "3" FontSize="14" Click="MenuItemWidth_Click"/>
+                    <MenuItem Name = "MenuWidth4" Header = "4" FontSize="14" Click="MenuItemWidth_Click" IsChecked="True"/>
+                    <MenuItem Name = "MenuWidth5" Header = "5" FontSize="14" Click="MenuItemWidth_Click"/>
+                    <MenuItem Name = "MenuWidth6" Header = "6" FontSize="14" Click="MenuItemWidth_Click"/>
+                    <MenuItem Name = "MenuWidth7" Header = "7" FontSize="14" Click="MenuItemWidth_Click"/>
+                    <MenuItem Name = "MenuWidth8" Header = "8" FontSize="14" Click="MenuItemWidth_Click"/>
+                    <MenuItem Name = "MenuWidth9" Header = "9" FontSize="14" Click="MenuItemWidth_Click"/>
+                    <MenuItem Name = "MenuWidth10" Header = "10" FontSize="14" Click="MenuItemWidth_Click"/>
+                </MenuItem>
+                <MenuItem Name = "MenuHeight" Header = "Высота" FontSize = "15">
+                    <MenuItem Name = "MenuHeight2" Header = "2" FontSize="14" Click="MenuItemHeight_Click"/>
+                    <MenuItem Name = "MenuHeight3" Header = "3" FontSize="14" Click="MenuItemHeight_Click"/>
+                    <MenuItem Name = "MenuHeight4" Header = "4" FontSize="14" Click="MenuItemHeight_Click" IsChecked="True"/>
+                    <MenuItem Name = "MenuHeight5" Header = "5" FontSize="14" Click="MenuItemHeight_Click"/>
+                    <MenuItem Name = "MenuHeight6" Header = "6" FontSize="14" Click="MenuItemHeight_Click"/>
+                    <MenuItem Name = "MenuHeight7" Header = "7" FontSize="14" Click="MenuItemHeight_Click"/>
+                    <MenuItem Name = "MenuHeight8" Header = "8" FontSize="14" Click="MenuItemHeight_Click"/>
+                    <MenuItem Name = "MenuHeight9" Header = "9" FontSize="14" Click="MenuItemHeight_Click"/>
+                    <MenuItem Name = "MenuHeight10" Header = "10" FontSize="14" Click="MenuItemHeight_Click"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Name = "MenuStepBack" Header = "Отменить ход" FontSize = "16" Click="MenuStepBack_Click"/>
+        </Menu>
+    </DockPanel>
+</Window>
